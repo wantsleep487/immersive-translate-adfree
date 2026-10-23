@@ -1,0 +1,31 @@
+/* Immersive Translate: Ad-Free Overrides */
+
+/* Hide "Upgrade to Pro" elements */
+.upgrade-pro { display: none !important; }
+
+/* Hide sponsor/affiliate content in service selector */
+.service-select-inline-sponsor-container,
+.service-select-inline-sponsor-marquee,
+.service-select-inline-sponsor-track { display: none !important; }
+
+/* Hide membership/prompt UI */
+[class*="membership-prompt-backdrop"] { display: none !important; }
+[class*="membership-prompt-card"] { display: none !important; }
+
+/* Hide premium icon badges */
+.popup-drawer-premium-icon,
+.screenshot-area-premium-icon { display: none !important; }
+
+/* Hide trial pro section */
+.trial-pro-container { display: none !important; }
+
+/* Hide ad banners */
+.imt-ad-banner { display: none !important; }
+.ad-banner-container { display: none !important; }
+
+/* Hide screenshot area membership prompts */
+[class*="screenshot-area-membership-prompt"] { display: none !important; }
+
+/* Hide promotion links */
+a[href*="pricing"] { display: none !important; }
+a[href*="joinUs"] { display: none !important; }

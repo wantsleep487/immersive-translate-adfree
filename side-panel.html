@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/side-panel.css" />
+    <link rel="stylesheet" href="styles/reward-center.css" />
+    <style>
+        body {
+            margin: 0;
+        }
+
+        /* 页面加载中的占位 loading */
+        .side-panel-loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--c-ff, #ffffff);
+            z-index: 9999;
+        }
+
+        .loading-spinner {
+            width: 24px;
+            height: 24px;
+            border: 2px solid var(--s-1, #f3f5f6);
+            border-top: 2px solid var(--p-main, #ea4c89);
+            border-radius: 50%;
+            animation: imt-spin 1s linear infinite;
+        }
+
+        @keyframes imt-spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+<style>
+/* ====== Immersive Translate: Ad-Block Overrides ====== */
+
+/* 1. Hide "Upgrade to Pro" buttons */
+.upgrade-pro,
+.upgrade-pro * { display: none !important; width: 0 !important; height: 0 !important; }
+
+/* 2. Hide sponsor/affiliate content in service selector */
+.service-select-inline-sponsor-container,
+.service-select-inline-sponsor-marquee,
+.service-select-inline-sponsor-track { display: none !important; width: 0 !important; height: 0 !important; }
+
+/* 3. Hide membership/prompt overlay */
+[class*="membership-prompt-backdrop"],
+[class*="membership-prompt-card"] { display: none !important; }
+
+/* 4. Hide premium icon badges */
+.popup-drawer-premium-icon,
+.screenshot-area-premium-icon { display: none !important; }
+
+/* 5. Hide trial pro section */
+.trial-pro-container { display: none !important; }
+
+/* 6. Hide ad banners */
+.imt-ad-banner,
+.imt-ad-banner *,
+.ad-banner-container { display: none !important; }
+
+/* 7. Hide donation/promotion buttons */
+[href*="pricing"],
+[href*="joinUs"],
+[href*="donate"] { display: none !important; }
+
+/* 8. Hide screenshot area membership prompts */
+[class*="screenshot-area-membership-prompt"] { display: none !important; }
+</style>
+</head>
+
+<body>
+    <div id="mount">
+        <div class="side-panel-loading">
+            <div class="loading-spinner"></div>
+        </div>
+    </div>
+
+    <script src="./side-panel.js"></script>
+</body>
+
+</html>

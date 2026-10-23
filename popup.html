@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Popup</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <script src="popup-layout-bootstrap.js"></script>
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/tailwind-compat.css" />
+  <link rel="stylesheet" href="styles/popup.css" />
+<style>
+/* ====== Immersive Translate: Ad-Block Overrides ====== */
+
+/* 1. Hide "Upgrade to Pro" buttons */
+.upgrade-pro,
+.upgrade-pro * { display: none !important; width: 0 !important; height: 0 !important; }
+
+/* 2. Hide sponsor/affiliate content in service selector */
+.service-select-inline-sponsor-container,
+.service-select-inline-sponsor-marquee,
+.service-select-inline-sponsor-track { display: none !important; width: 0 !important; height: 0 !important; }
+
+/* 3. Hide membership/prompt overlay */
+[class*="membership-prompt-backdrop"],
+[class*="membership-prompt-card"] { display: none !important; }
+
+/* 4. Hide premium icon badges */
+.popup-drawer-premium-icon,
+.screenshot-area-premium-icon { display: none !important; }
+
+/* 5. Hide trial pro section */
+.trial-pro-container { display: none !important; }
+
+/* 6. Hide ad banners */
+.imt-ad-banner,
+.imt-ad-banner *,
+.ad-banner-container { display: none !important; }
+
+/* 7. Hide donation/promotion buttons */
+[href*="pricing"],
+[href*="joinUs"],
+[href*="donate"] { display: none !important; }
+
+/* 8. Hide screenshot area membership prompts */
+[class*="screenshot-area-membership-prompt"] { display: none !important; }
+</style>
+</head>
+
+<body>
+  <div id="mount"></div>
+  <script src="popup.js"></script>
+</body>
+
+</html>
